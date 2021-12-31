@@ -11,9 +11,9 @@ end = "&raw=true"
 def specific_bible():
 	global book
 	try:
-		book = input('Which book are you looking for?').capitalize()
-		chapter = input ('Which chapter are you looking for?')
-		verse = ("Which verse are you looking for?")
+		book = input('Which Book are you looking for? ').capitalize()
+		chapter = input ('Which Chapter are you looking for? ')
+		verse = ("Which Verse are you looking for? ")
 		url_response = url + book + chapter + ":" + verse + end + '&version-kjv'
 		response = requests.get(url_response).json()
 		verse_upper = response["book"][0]["chapter"]
@@ -30,8 +30,8 @@ def specific_bible():
 def search_bible():
 	global book, verse
 	try:
-		book = input('Which book are you looking for?').capitalize()
-		chapter = input ('Which chapter are you looking for?')
+		book = input('Which Book are you looking for? ').capitalize()
+		chapter = input ('Which Chapter are you looking for? ')
 		# verse = ("Which verse are you looking for?")
 		verse_int = 1
 		while True:
