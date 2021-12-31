@@ -3,10 +3,9 @@ Uses requests and JSON (pip install if needed).
 
 - Queries user for input and returns values from JSON data.
 
-- Idea from Brandon Jacobson with changes made such as version and input queries.
-
 - This is for personal reference as a blueprint to further work with APIs.
 
+- Developed from Brandon Jacobson's idea. 
 
 CURRENT VERSION:
 - Two available functions, one for specific verse and one for the whole chapter (comment out the one to use)
